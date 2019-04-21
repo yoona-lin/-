@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/play/play",
+    "pages/list/list",
+    "pages/search/search",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微音乐",
+    "navigationBarTextStyle":"black"
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "backgroundAudioManager"
+  ],
+  "tabBar": {
+    "color":"#818181",
+    "backgroundColor":"blank",
+    "selectedColor":"blue",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"音乐列表",
+        "iconPath":"/images/music-s.png",
+        "selectedIconPath":"/images/music.png"
+      },
+      {
+        "pagePath": "pages/play/play",
+        "text": "正在播放",
+        "iconPath": "/images/playing-s.png",
+        "selectedIconPath": "/images/playing.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/images/search-s.png",
+        "selectedIconPath": "/images/search.png"
+      }
+    ]
+  }
+}
