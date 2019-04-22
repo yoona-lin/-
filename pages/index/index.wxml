@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<scroll-view scroll-y="ture">
+  <!-- <view class="board">
+    <image src="/images/playing.png"/>
+  </view> -->
+  <view class="board" bindtap="playToggle">
+    <image  src="/images/{{isPlaying ? 'pause' : 'play'}}.png" />
+  </view>
+
+  <view>。。。。烦，就是不能播放，走人了</view>
+
+  <view class="songlist">
+    <block wx:for="{{result}}" wx:key="index" >
+      <view class="songitem">
+        <view class="song-play">
+          <image  src="/images/play.png" bindtap="playToggle" />
+        </view>
+        <view class="song-detail" >
+          <view class="song-title" bindtap="playToggle">{{item.name}}</view>
+          <view class="song-subtitle" bindtap="playToggle">{{item.artists}} - {{item.alias}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <loading hidden="{{!loading}}">
+  正在加载音乐...
+  </loading>
+</scroll-view>

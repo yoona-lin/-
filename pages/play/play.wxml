@@ -1,0 +1,16 @@
+<!-- pages/play/play.wxml
+<view class='playing container'>
+  <view class='thumbnail'>
+    <image src="/images/header.png" />
+  </view>
+  <view class='detail'>
+    <view class='title'>{{song.name}}</view>
+    <view class='author'>{{song.artists}}</view>
+    <view class='author'>{{song.alias}}</view>
+    <view class='action'>
+      <view class="act-toggle" bindtap="playToggle">
+        <image  src="/images/{{isPlaying ? 'pause' : 'play'}}.png" />
+      </view>
+    </view>
+  </view>
+</view> -->
